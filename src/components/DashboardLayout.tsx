@@ -1,11 +1,4 @@
 import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetTitle,
-  SheetClose,
-} from "@/components/ui/sheet";
-import {
   Dialog,
   DialogContent,
   DialogHeader,
@@ -13,31 +6,30 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import {
-  ArrowUpCircleIcon,
-  Menu,
-  SettingsIcon,
-  Sun,
-  Moon,
-  Monitor,
-} from "lucide-react";
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
+import { AvatarFallback } from "@radix-ui/react-avatar";
+import { Menu, Monitor, Moon, SettingsIcon, Sun } from "lucide-react";
+import { ComponentType, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import GetRouteName from "./GetRouteName";
-import { Avatar, AvatarImage } from "./ui/avatar";
-import { AvatarFallback } from "@radix-ui/react-avatar";
-import { cn } from "@/lib/utils";
-import {
-  HomeIcon,
-  LogoIcon,
-  TransactionsIcon,
-  AccountsIcon,
-  InvestmentIcon,
-  CreditCardIcon,
-  LoansIcon,
-  ServicesIcon,
-  PriviledgeIcon,
-} from "./svg/index";
-import { ComponentType, useState } from "react";
 import { Cog } from "./svg/Cog";
+import {
+  AccountsIcon,
+  CreditCardIcon,
+  HomeIcon,
+  InvestmentIcon,
+  LoansIcon,
+  LogoIcon,
+  PriviledgeIcon,
+  ServicesIcon,
+  TransactionsIcon,
+} from "./svg/index";
+import { Avatar, AvatarImage } from "./ui/avatar";
 import { Input } from "./ui/input";
 
 type MenuItem = {

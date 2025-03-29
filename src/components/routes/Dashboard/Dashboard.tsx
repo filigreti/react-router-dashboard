@@ -1,18 +1,14 @@
-import { motion, useDragControls } from "framer-motion";
-import Card from "./Card";
-import { useMediaQuery } from "react-responsive";
-import { useRef, useEffect, useState } from "react";
 import { TransactionCard } from "@/components/svg/TransactionCard";
-import { TransactionPaypal } from "@/components/svg/TransactionPaypal";
 import { TransactionMoney } from "@/components/svg/TransactionMoney";
-import WeeklyChart from "./WeeklyChart";
-import ExpenseChart from "./ExpenseChart";
-import SeparatedPieChart from "./ExpenseChart2";
-import PolarAreaChart from "./ExpenseChart2";
-import ExpenseDistributionChart from "./ExpenseChart";
+import { TransactionPaypal } from "@/components/svg/TransactionPaypal";
+import { motion, useDragControls } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import BalanceChart from "./BalanceChart";
+import Card from "./Card";
 import PieChart from "./ExpenseChart";
 import QuickTransfer from "./QuickTransfer";
-import BalanceChart from "./BalanceChart";
+import WeeklyChart from "./WeeklyChart";
 
 const cardVariants = {
   hidden: { opacity: 0, x: 50 },

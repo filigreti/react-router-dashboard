@@ -1,4 +1,3 @@
-import { Scale } from "lucide-react";
 import Chart from "react-apexcharts";
 
 const PieChart = () => {

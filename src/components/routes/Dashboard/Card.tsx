@@ -1,11 +1,9 @@
 const Card = ({
   rect = "url(#paint0_linear_14_1311)",
   path = "white",
-  stroke,
 }: {
   rect?: string;
   path?: string;
-  stroke?: string;
 }) => {
   return (
     <div className="xl:w-[20rem] w-[18rem] shadow rounded-3xl">
